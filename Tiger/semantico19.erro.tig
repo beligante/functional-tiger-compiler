@@ -1,0 +1,12 @@
+/* erro : variável não é um array 
+
+   Imprima algo do tipo:
+
+   Erro (linha: 10; coluna: 9): variável d não é um array */
+
+let 
+	var d:=0
+in
+        d[3]
+end
+

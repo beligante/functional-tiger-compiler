@@ -1,0 +1,34 @@
+/* complete este programa para processar a seguinte lista:
+
+   [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+
+*/
+
+let 
+
+	type list = {head: int, tail: list}
+	type observeInt = (int,cont) -> answer
+
+	function doList(f: observeInt, l: list, c: cont) =
+		if l=nil then c()
+		else let function doRest() = doList(f, l.tail, c)
+		     in f(l.head, doRest)
+		     end
+
+	function double(j: int) : int = j + j
+
+	function printDouble(i: int, c: cont) =
+		let function again() = putInt(double(i), c)
+		in putInt(i, again)
+		end
+
+	function printTable(l: list, c: cont) =
+		doList(printDouble, l, c)
+
+	var mylist := ...
+
+in
+
+	printTable(mylist, exit)
+
+end

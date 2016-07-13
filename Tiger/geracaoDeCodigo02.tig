@@ -1,0 +1,11 @@
+/* variável local esconda a global 
+
+   Complete este código para imprimir o retorno de g */
+
+let
+	var a:=0
+
+	function g(a:int):int = a 
+in
+ g(2)
+end

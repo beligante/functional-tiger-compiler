@@ -1,0 +1,7 @@
+/* error: comparação de tipos incompatíveis 
+
+   O compilador deverá imprimir uma mensagem similar a:
+
+   Erro (linha: 6; coluna: 3): comparação de tipos incompatíveis, int e string */
+
+3 > "df"

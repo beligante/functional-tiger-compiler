@@ -1,0 +1,7 @@
+/* error : if-then não retorna nenhum valor.
+
+   Deverá ser impresso:
+
+   Erro (linha: 7; coluna: 1): if-then não retorna nenhum valor */
+
+if 20 then 3

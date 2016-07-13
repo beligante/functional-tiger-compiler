@@ -1,0 +1,30 @@
+/* altere este código para imprimir o valor de todas as variáveis */
+
+let
+	type intfun = int -> int
+	
+	function add(n: int) : intfun =
+		let function h(m: int) : int = n + m
+		in h
+		end
+
+	var addFive : intfun := add(5)
+	var addSeven : intfun := add(7)
+	var twenty := addFive(15)
+	var twentyTwo := addSeven(15)
+
+	function twice (f: intfun) : intfun =
+		let function g(x: int) : int = f(f(x))
+		in g
+		end
+
+	var addTen : intfun := twice(addFive)
+	
+	var seventeen := twice(addFive)
+	var addTwentyFour := twice(twice(add(6)))
+
+in
+
+	addTwentyFour(seventeen)
+
+end

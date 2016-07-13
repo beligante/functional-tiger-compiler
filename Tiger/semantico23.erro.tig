@@ -1,0 +1,14 @@
+/* erro : tipos diferentes
+
+   Imprima algo do tipo:
+
+   Erro (linha: 11; coluna: 28): arrays possuem tipo diferentes; arrtype1 e arrtype2 */
+
+let
+	type arrtype1 = array of int
+	type arrtype2 = array of int
+
+        var arr1: arrtype1 := arrtype2 [10] of 0
+in
+	arr1
+end

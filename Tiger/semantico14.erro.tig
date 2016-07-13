@@ -1,0 +1,17 @@
+/* error: definição de tipos recursivos interrompida
+
+   Imprima algo similar a:
+
+   Erro (linha 12; coluna:1): definição do tipo recursivo tree interrompida
+
+ */
+
+let
+/* define a tree */
+type tree ={key: int, children: treelist}
+var d:int :=0
+type treelist = {hd: tree, tl: treelist}
+
+in
+	d
+end

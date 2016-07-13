@@ -1,0 +1,9 @@
+/* Implemente uma função que retorne o maior elemento de uma lista.
+   Imprima o elemento retornado pela função.
+   
+ Use como entrada a lista:
+
+[34, 2, 87, 34, 12, 45, 3, 28, 99, 234]
+
+*/
+

@@ -1,0 +1,5 @@
+/* a saída de erro de ser algo similar a:
+
+   Erro (linha: 5; coluna: 1): then e else retornam tipos diferentes */
+
+if (5>4) then 13 else  " "

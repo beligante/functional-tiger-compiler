@@ -1,0 +1,6 @@
+/* token ilegal  */
+let
+	var a1.2 := 0
+in
+	0
+end

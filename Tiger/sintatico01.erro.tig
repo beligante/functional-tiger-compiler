@@ -1,0 +1,11 @@
+/* erro: erro de sintaxe, nil não deve ser precedido por um tipo. 
+
+   Seu compilador deve imprimir uma mensagem que indique isto. */
+
+let 
+	type rectype = {name:string, id:int}
+
+	var a:= rectype nil
+in
+	a
+end

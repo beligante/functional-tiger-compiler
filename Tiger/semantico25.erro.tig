@@ -1,0 +1,10 @@
+/* erro : tipo e iniciação diferem
+
+   Imprima algo do tipo:
+
+   Erro (linha: 7; coluna: 19): tipo e iniciação da variável a diferem */
+let 
+        var a:int := " "
+in
+	a
+end

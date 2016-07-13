@@ -1,0 +1,14 @@
+/* Isto é ilegal, não pode existir duas funções consecutivas com o mesmo nome.
+
+   Imprima:
+
+   Erro (linha: 11; coluna: 18): não pode existir duas funções consecutivas com o mesmo nome. 
+
+  */
+
+let
+	function g(a:int):int = a
+	function g(a:int):int = a
+in
+	0
+end

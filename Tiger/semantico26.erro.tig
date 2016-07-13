@@ -1,0 +1,15 @@
+/* erro : iniciação e tipo diferem
+
+  Imprima algo do tipo:
+
+  Erro (linha: 12; coluna: 15): tipo e iniciação da variável a diferem 
+
+ */
+
+let
+	type arrayty = array of int
+
+	var a := arrayty [10] of " "
+in
+	0
+end

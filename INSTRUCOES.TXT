@@ -1,0 +1,31 @@
+==============================================
+=========== COMPILANDO O CODIGO ==============
+==============================================
+
+1) Para compilar o codigo, abra o terminal e vá para o diretorio onde este arquivo se encontra. 
+2) rode o seguinte comando "make clean && make"
+
+
+
+==================================================
+=========== EXECUTANDO O COMPILADOR ==============
+==================================================
+
+1) para executar o compilador Basta executar o arquivo a.out da seguinte forma: a.out LOCALIZACAO_DO_ARQUIVO_TIGER
+	EX: ./a.out ./luis/Tiger/semantico42.tig 
+
+	1.1) O compilador irá printar no proprio terminal o resultado das analises.
+	
+	1.2) Ao fim da análise semantica, o compilador escreve um arquivo no mesmo diretorio do arquivo de entrada, como a extensao .arv (este arquivo é um arquivo gerado de texto comum).
+		Ex. Para o arqivo "./luis/Tiger/semantico42.tig" seria gerado um arquivo "semantico42.arv" no diretorio "./luis/Tiger/"
+
+2) Para emissão de codigo, é necessaria a inserçao da flag "-llvm-emit".
+	Ex:  ./a.out ./Tiger/geracaoDeCodigo01.tig -llvm-emit
+
+	2.1) Será gerado um arquivo no mesmo diretorio do arquivo de entrada com a extensão ".ll".
+		Ex: Para o arqivo "./Tiger/geracaoDeCodigo01.tig" seria gerado um arquivo "geracaoDeCodigo01.ll" no diretorio "./Tiger/"
+
+
+3) Para printar o resultado de operacoes que geram inteiros, criamos a funcao "printint", a qual recebe um inteiro como valor e printa este valor e uma quebra de linha.
+	Ex: Utilizando o arquivo "geracaoDeCodigo01.tig" temos definida a funcao "nfactor", utilizando-a no printint fica assim:
+		printint(nfactor(10))

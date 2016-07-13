@@ -1,0 +1,10 @@
+/* erro : passagem de parâmetro inválida
+
+   Imprima algo assim:
+
+   Erro (linha: 9; coluna: 9): passagem de parâmetro inválida para g */
+let
+	function g (a:int , b:string):int = a
+in
+	g("one", "two")
+end

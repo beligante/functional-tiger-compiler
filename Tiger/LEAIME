@@ -1,0 +1,48 @@
+*** Correção do trabalho
+
+- A correção do trabalho será baseada SOMENTE em uma bateria de testes, assim o 
+  código do compilador deve estar funcionando. Código incompleto, ou com erro, 
+  ou sem compilar, irá falhar em todos os testes e consequentemente terá nota zero.
+
+- Cópias terão nota zero, ambas.
+
+*** Correção das Análises Léxica e Sintática
+
+- O compilador deverá mostrar mensagens de erros precisas.
+- Um teste somente estará correto SE E SOMENTE SE, as mensagens de erro forem precisas.
+- Uma mensagem precisa é formada por:
+   1. Linha correta do erro;
+   2. Coluna correta do erro; e
+   3. Uma mensagem indicando qual é o erro.
+
+*** Correção da Análise Sintática
+
+- Um teste em um código errado somente estará correto SE E SOMENTE SE, as mensagens
+  de erro forem precisas.
+- Uma mensagem precisa é formada por:
+   1. Linha correta do erro;
+   2. Coluna correta do erro; e
+   3. Uma mensagem indicando qual é o erro.
+- Um teste em um código correto somente estará correto SE E SOMENTE SE, for impresso
+  a árvore sintática abstrata E esta estiver correta.
+
+*** Correção da Geração de Código
+
+- Um teste somente estará correto SE E SOMENTE SE a LLVM gerar um código executável,
+  cuja semântica seja a esperada.
+- Portanto, não será analisado a simples geração de código LLVA, independente do código
+  executável. O pressuposto é: se a tradução de Tiger para LLVA estiver correta, 
+  consequentemente será gerado um código executável correto.
+  
+*** Nota de Cada Fase
+
+- A nota de cada fase será proporcional a quantidade de testes válidos. Ou seja,
+  será atribuído nota 10.0, a fase que validar corretamente todos os testes.
+
+*** Nota
+
+- A nota final é a média ponderada:
+
+  (Léxico * 0.1) + (Sintático * 0.2) + (Semântico * 0.2) + (GeraçãoDeCódigo * 0.5)
+
+

@@ -1,0 +1,21 @@
+/* error: tipos recursivos que não montam nem registro nem array 
+
+   Deverá ser impresso algo similar a:
+
+   Erro (linha: 14; coluna 6): tipo recursivo a que não montam nem registro nem array 
+   Erro (linha: 15; coluna 6): tipo recursivo b que não montam nem registro nem array 
+   Erro (linha: 16; coluna 6): tipo recursivo c que não montam nem registro nem array 
+   Erro (linha: 17; coluna 6): tipo recursivo d que não montam nem registro nem array 
+
+*/
+
+let 
+
+type a=c
+type b=a
+type c=d
+type d=a
+
+in
+ " ";
+end

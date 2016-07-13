@@ -1,0 +1,13 @@
+/* Isto é ilegal, não pode existir dois tipos consecutivos com o mesmo nome.
+
+   Imprima:
+
+   Erro (linha: 10; coluna: 14): não pode existir dois tipos consecutivos com o mesmo nome. 
+
+  */
+let
+	type a = int
+	type a = string
+in
+	0
+end

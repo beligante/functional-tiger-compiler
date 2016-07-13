@@ -1,0 +1,12 @@
+/* erro : variável não é um registro
+
+   Imprima algo do tipo:
+
+   Erro (linha: 10; coluna: 9): variável d não é um registro */
+
+let 
+	var d:=0
+in
+        d.f 
+end
+

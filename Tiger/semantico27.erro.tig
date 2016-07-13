@@ -1,0 +1,11 @@
+/* erro : tipo desconhecido
+
+      Imprima algo assim:
+
+      Erro (linha: 8; coluna: 17): tipo desconhecido para a variável a */
+
+let
+	var a:= rectype {}
+in
+	0
+end

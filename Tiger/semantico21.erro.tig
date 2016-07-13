@@ -1,0 +1,7 @@
+/* erro : tipos incompatíveis
+
+   Imprima algo do tipo:
+
+   Erro (linha: 7; coluna: 1): tipos incompatíveis; int e string */
+
+3 + "var"

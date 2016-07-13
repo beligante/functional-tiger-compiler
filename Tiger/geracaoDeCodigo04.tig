@@ -1,0 +1,47 @@
+/* complete este código para:
+
+  1. criar uma árvore com os seguintes dados (chave: valor)
+
+	"a" : 1
+	"b" : 2
+	"c" : 3
+	"d" : 4
+	"e" : 5
+	"f" : 6
+
+  2. imprimir o valor da chave "e".
+
+*/
+
+type key = string
+type binding = int
+type tree = (key: key,
+	     binding: binding,
+ 	     left: tree,
+             right: tree)
+
+function look(t: tree, k: key) : binding =
+	if k < t.key
+		then look (t.left, k)
+	else if k > t.key
+		then look(t.right, k)
+		else t.binding
+
+function enter(t: tree, k: key, b: binding): tree =
+	if k < t.key then
+		tree{key=t.key,
+		     binding=t.binding,
+		     left=enter(t.left, k, b),
+		     right=t.right}
+	else if k > t.key then
+		tree{key=t.key,
+                     binding=t.binding,
+                     left=t.left,
+                     right=enter(t.right,k,b)}
+	     else tree{key=t.key,
+                       binding=t.binding,
+                       left=t.left,
+                       right=t.right}
+
+
+

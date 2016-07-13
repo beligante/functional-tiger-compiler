@@ -1,0 +1,40 @@
+let
+
+	type intConsumer = int -> answer
+
+	function isDigit(s : string) : int =
+		ord(s) >= ord("0") & ord(s) <= ord('9")
+
+	function getInt(done: intConsumer) = 
+	let function nextDigit(accum: int) =
+		let function eatChar(dig: string) = 
+			if isDigit(dig)
+			then nexDigit(accum*10+ord(dig))
+			else done(accum)
+		in getchar(eatChar)
+		end
+	in nextDigit(0)
+	end
+
+	function putInt(i: int, c: cont) = 
+		if i = 0 then c()
+		else let var rest := i/10
+			 var dig := i - rest * 10
+			 function doDigit() = print(chr(dig), c)
+		     in putInt(rest, doDigit)
+		     end
+
+	function factorial(i: int) : int = 
+		if i=0 then 1 else i * factorial(i-1)
+
+	function loop(i) = 
+		if i > 12 then exit()
+		else let function next() = getInt(loop)
+		     in putInt(factorial(i), next)
+		    end
+
+in
+
+	getInt(loop)
+
+end

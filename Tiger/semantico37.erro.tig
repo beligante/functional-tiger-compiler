@@ -1,0 +1,14 @@
+/* erro: inicializando uma expressão com nil, que não é um registro 
+
+   Imprima algo assim:
+
+   Erro (linha: 11; coluna: 14): inicializando variável a que não é um registro com nil.
+
+*/
+let 
+	type rectype = {name:string, id:int}
+
+	var a:= nil
+in
+	a
+end

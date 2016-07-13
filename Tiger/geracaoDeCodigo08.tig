@@ -1,0 +1,11 @@
+/* 1. Implemente a função 
+
+    quickSort(intList) : intList 
+
+   2. Faça uma chamada a sua função para ordernar:
+
+     [34, 2, 87, 34, 12, 45, 3, 28, 99, 234]
+
+   3. Imprima a lista ordenada
+
+*/

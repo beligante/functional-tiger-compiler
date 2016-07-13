@@ -1,0 +1,22 @@
+/* complete este código de forma a imprimir o resultado de sumSq */
+
+type intList = {head: int, tail: intList}
+type intfun = int->int
+type int2fun = (int, int) -> int
+
+function sumSq(inc: intfun, mul: int2fun, add: int2fun) : int =
+	let
+		function range(i:int, j:int) : intList = 
+			if i>j then nil else intList(head=1, tail=range(inc(i),j))
+
+		function squares(l: intList) : intList =
+			if l=nil then nil
+			else intList{head=mul(l.head, l.head), tail=squares(l.tail)}
+
+		function sum(accum: int, l: intList) : int =
+			if l=nil then accum else sum(add(accum, l.head), l.tail)
+
+	in
+		sum(0, squares(range(1,1000)))
+
+	end

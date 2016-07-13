@@ -1,0 +1,15 @@
+/* erro : procedimento retornando valor 
+
+   Imprima algo do tipo:
+
+   Erro (linha: 11; coluna: 29): procedimento retornando valor
+
+*/
+
+
+let
+	function g(a:int) = a
+in 
+	g(2)
+end
+
